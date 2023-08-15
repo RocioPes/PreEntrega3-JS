@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/main/style.css">
+    <title>Mi cuenta</title>
+</head>
+<body>
+    <nav  class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid sticky-bottom">
+          <a class="navbar-brand" href="/main/index.html">Ticket To Go</a> 
+          <a class="navbar-brand" href="/shows/tickets.html">Mis entradas</a>
+          <a class="navbar-brand" href="#">Mi cuenta</a>
+          <a class="navbar-brand" href="/main/faq.html">Preguntas frecuentes</a>
+        </div>
+      </nav>
+    <h1>Datos personales</h1>
+
+    <form id="form" action="">
+      <ul>
+        <li><label for="name">Nombre y apellido</label>
+      <input type="text" id="user-name" name="name" required></li> 
+      <li><label for="email">Correo Electrónico</label>
+      <input type="email" name="email" id="user-email" required></li>
+     <li> <label for="text">DNI</label>
+      <input type="number" name="document" id="user-dni" required></ul></li>
+    
+      <button type="submit" id="submit-button">Guardar</button>
+      <button type="reset">Borrar información</button>
+    </form>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>    
+<script src="/main/user.js"></script>
+
+</body>
+</html>
